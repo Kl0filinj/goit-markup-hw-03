@@ -17,6 +17,27 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h1,
+h2,
+h3,
+ul,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    outline: red solid 1px;
+}
+
+/* .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+} */
+
 /* Хедер */
 
 .logo {
@@ -73,11 +94,16 @@ body {
 
     text-decoration: none;
 }
+
 /* Страница Студия */
 /* Герой */
 
 .hero-title {
     color: var(--accent-white-color);
+
+    margin: 0 auto 30px;
+    max-width: 696px;
+
 
     font-weight: 900;
     font-size: 44px;
@@ -113,7 +139,15 @@ body {
     background-color: var(--accent-color);
 }
 
-/* Добавить ховер и фокус на фильтр баттон */
+.hero {
+    background-color: var(--footer-bg-color);
+}
+
+.hero-container {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
 /* Наши преимущества */
 
