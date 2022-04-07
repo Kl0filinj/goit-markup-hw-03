@@ -1,0 +1,256 @@
+/* Переменные */
+
+:root {
+    --accent-color: #2196F3;
+    --headline-color: #212121;
+    --main-text-color: #757575;
+    --footer-bg-color: #2F303A;
+    --accent-white-color: #ffffff;
+    --main-button-bg-color: #F5F4FA;
+    --accented-button-color: #ffffff;
+}
+
+body {
+    color: var(--main-text-color);
+    background-color: var(--accent-white-color);
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Хедер */
+
+.logo {
+    color: var(--accent-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+}
+
+.logo-accent {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.logo-accent.dark {
+    color: var(--headline-color);
+}
+
+.nav-link {
+    color: var(--headline-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.auth-link:hover,
+.auth-link:focus,
+.info:hover,
+.info:focus {
+    color: var(--accent-color);
+}
+
+.auth-link {
+    color: var(--main-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+/* Страница Студия */
+/* Герой */
+
+.hero-title {
+    color: var(--accent-white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+}
+
+.accent-button {
+    color: var(--accent-white-color);
+    background-color: var(--accent-color);
+}
+
+.filter-button {
+    color: var(--headline-color);
+    background-color: var(--main-button-bg-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--accent-white-color);
+    background-color: var(--accent-color);
+}
+
+/* Добавить ховер и фокус на фильтр баттон */
+
+/* Наши преимущества */
+
+.benefit-title {
+    color: var(--headline-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.benefit-text {
+    color: var(--main-text-color);
+
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Чем мы занимаемся */
+
+.employment-title {
+    color: var(--headline-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+}
+
+/* Наши работники */
+
+.workers-title {
+    color: var(--headline-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.workers-name {
+    color: var(--headline-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
+
+.workers-position {
+    color: var(--main-text-color);
+
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
+
+/* Футер */
+
+.footer {
+    background-color: var(--footer-bg-color);
+}
+
+.logo-accent.light {
+    color: var(--accent-white-color);
+}
+
+.info {
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.geo {
+    color: var(--accent-white-color);
+}
+
+.mail,
+.tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+/* Спрятанные заголовки */
+
+.hiden-title {
+    display: none;
+}
+
+/* Опциональные настройки списков */
+
+.nav-list,
+.auth-info,
+.benefits-list,
+.employment-list,
+.workers-list,
+.address-list,
+.filter-list,
+.projects-list {
+    list-style-type: none;
+}
+
+/* Страница Портфолио */
+
+/* Фильтр */
+
+/* .filter-button:hover,
+.filter-button:focus {
+    color: var(--accented-button-color);
+    background-color: var(--accent-color);
+} */
+
+/* Проекты */
+
+.projects-desc-title{
+    color: var(--headline-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects-group {
+    color: var(--main-text-color);
+
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
