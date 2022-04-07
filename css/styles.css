@@ -26,6 +26,10 @@ p {
     margin-bottom: 0;
 }
 
+ul {
+    padding-left: 0;
+}
+
 .container {
     width: 1200px;
     margin-right: auto;
@@ -39,6 +43,23 @@ p {
 } */
 
 /* Хедер */
+
+.flex-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    margin-left: 93px;
+}
+
+.auth-info {
+    display: flex;
+    margin-left: auto;
+}
 
 .logo {
     color: var(--accent-color);
@@ -67,12 +88,20 @@ p {
 .nav-link {
     color: var(--headline-color);
 
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
     text-decoration: none;
+}
+
+.nav-item:not(:first-child) {
+    margin-left: 50px;
 }
 
 .nav-link:hover,
@@ -87,12 +116,19 @@ p {
 .auth-link {
     color: var(--main-text-color);
 
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
     text-decoration: none;
+}
+
+.auth-item:not(:first-child) {
+    margin-left: 50px;
 }
 
 /* Страница Студия */
