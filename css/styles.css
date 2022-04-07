@@ -190,6 +190,8 @@ ul {
 .benefit-title {
     color: var(--headline-color);
 
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -204,6 +206,20 @@ ul {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.benefits-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits-item {
+    max-width: 270px;
+}
+
+.benefits-item:not(:first-child) {
+    margin-left: 30px;
 }
 
 /* Чем мы занимаемся */
