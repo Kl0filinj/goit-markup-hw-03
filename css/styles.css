@@ -37,6 +37,16 @@ ul {
     outline: red solid 1px;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: green solid 1px;
+}
+
+.section:nth-child(2n+1) {
+    padding-top: 0;
+}
+
 /* .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -202,7 +212,6 @@ ul {
 .benefit-text {
     color: var(--main-text-color);
 
-    /* font-weight: 400; */
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -227,6 +236,8 @@ ul {
 .employment-title {
     color: var(--headline-color);
 
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -235,10 +246,21 @@ ul {
     
 }
 
+.employment-list {
+    display: flex;
+    justify-content: center;
+}
+
+.employment-item:not(:first-child) {
+    margin-left: 30px;
+}
+
 /* Наши работники */
 
 .workers-title {
     color: var(--headline-color);
+
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -250,6 +272,9 @@ ul {
 .workers-name {
     color: var(--headline-color);
 
+    margin-bottom: 10px;
+
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -259,10 +284,30 @@ ul {
 .workers-position {
     color: var(--main-text-color);
 
-    /* font-weight: 400; */
+
+    text-align: center;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+}
+
+.workers-list {
+    display: flex;
+    justify-content: center;
+}
+
+.workers-item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.workers-box {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.workers-bottom-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* Футер */
@@ -273,6 +318,23 @@ ul {
 
 .logo-accent.light {
     color: var(--accent-white-color);
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.address-list {
+    margin-top: 20px;
+}
+
+.flex-footer {
+    padding-bottom: 60px;
+}
+
+.adress-item:not(:first-child) {
+    margin-top: 9px;
 }
 
 .info {
