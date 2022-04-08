@@ -30,17 +30,53 @@ ul {
     padding-left: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Опциональные настройки списков */
+
+.nav-list,
+.auth-info,
+.benefits-list,
+.employment-list,
+.workers-list,
+.address-list,
+.filter-list,
+.projects-list {
+    list-style-type: none;
+}
+
+/* Спрятанные заголовки */
+
+.hiden-title {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden;
+}
+
+
 .container {
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    /* outline: red solid 1px; */
+    padding:0 15px ;
+    outline: red solid 1px;
 }
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    /* outline: green solid 1px; */
+    outline: green solid 1px;
 }
 
 /* .section:nth-child(2n+1) {
@@ -49,7 +85,7 @@ ul {
 /* Хедер */
 
 .page-header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .flex-header {
@@ -58,10 +94,12 @@ ul {
     justify-content: center;
 }
 
+.nav-menu {
+    margin-left: 93px;
+}
+
 .nav-list {
     display: flex;
-    justify-content: center;
-    margin-left: 93px;
 }
 
 .auth-info {
@@ -185,6 +223,7 @@ ul {
 }
 
 .filter-button-features {
+    font-weight: 500;
     padding: 6px 22px;
     border-color: transparent;
 }
@@ -198,9 +237,6 @@ ul {
 
 .hero {
     background-color: var(--footer-bg-color);
-}
-
-.hero-container {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -245,7 +281,7 @@ ul {
 /* Чем мы занимаемся */
 
 .employment {
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 
 .employment-title {
@@ -329,7 +365,7 @@ ul {
 }
 
 .project-card-bottom {
-    padding: 20px 0 20px 24px;
+    padding: 20px 24px;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
@@ -337,25 +373,17 @@ ul {
 
 /* Футер */
 
-.footer {
+.page-footer {
     background-color: var(--footer-bg-color);
+    padding: 60px;
+}
+
+.footer-address {
+    margin-top: 20px;
 }
 
 .logo-accent.light {
     color: var(--accent-white-color);
-}
-
-.footer-logo {
-    display: inline-block;
-    margin-top: 60px;
-}
-
-.address-list {
-    margin-top: 20px;
-}
-
-.flex-footer {
-    padding-bottom: 60px;
 }
 
 .adress-item:not(:first-child) {
@@ -378,45 +406,14 @@ ul {
 .tel {
     color: rgba(255, 255, 255, 0.6);
 }
-/* Спрятанные заголовки */
-
-.hiden-title {
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    margin: -1px; 
-    border: 0; 
-    padding: 0; 
-    white-space: nowrap; 
-    clip-path: inset(100%); 
-    clip: rect(0 0 0 0); 
-    overflow: hidden;
-}
-
-/* Опциональные настройки списков */
-
-.nav-list,
-.auth-info,
-.benefits-list,
-.employment-list,
-.workers-list,
-.address-list,
-.filter-list,
-.projects-list {
-    list-style-type: none;
-}
 
 /* Страница Портфолио */
-
-.filter {
-    margin-bottom: 50px;
-}
-
 /* Фильтр */
 
 .filter-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .filter-item:not(:first-child) {
@@ -427,6 +424,8 @@ ul {
 
 .projects-desc-title{
     color: var(--headline-color);
+
+    margin-bottom: 4px;
 
     font-weight: 700;
     font-size: 18px;
@@ -446,7 +445,6 @@ ul {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .projects-item {
